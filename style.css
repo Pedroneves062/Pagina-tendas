@@ -1,0 +1,430 @@
+/* =========================
+   Geral
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   Hero Section
+========================= */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ff6b00, #ffb347, #ff4500, #ffc371);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  margin-bottom: 1rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00; }
+  to { text-shadow: 0 0 20px #ffd700, 0 0 40px #ffb347; }
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn-hero {
+  background: #25D366;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #1ebe5d;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1.2rem; }
+}
+
+/* =========================
+   Galeria de Tendas
+========================= */
+#tendas {
+  padding: 4rem 1rem;
+  background-color: #FFF7ED;
+}
+
+#tendas h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #FF7F50;
+  margin-bottom: 1rem;
+}
+
+#tendas p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.tenda-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tenda-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tenda-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.tenda-card h3 {
+  color: #FF7F50;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.tenda-card p {
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.tenda-card a {
+  margin: 0 auto 1rem auto;
+  padding: 0.75rem 1.5rem;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.tenda-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+}
+
+/* =========================
+   Quem Somos
+========================= */
+#quemsomos {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #FFF7ED, #FFE5B4);
+  text-align: center;
+}
+
+#quemsomos h2 {
+  font-size: 2rem;
+  color: #FF7F50;
+  margin-bottom: 1rem;
+}
+
+#quemsomos p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #555;
+}
+
+#quemsomos a {
+  background: #25D366;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+#quemsomos a:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Por que Comprar
+========================= */
+#porquecomprar {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #fff, #FFF7ED);
+  text-align: center;
+}
+
+#porquecomprar h2 {
+  font-size: 2rem;
+  color: #FF7F50;
+  margin-bottom: 2rem;
+}
+
+#porquecomprar .grid div {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#porquecomprar .grid div:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Estatísticas
+========================= */
+#estatisticas {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#estatisticas h3 {
+  font-size: 2rem;
+  color: #28A745;
+  margin-bottom: 0.5rem;
+}
+
+#estatisticas p {
+  color: #555;
+}
+
+/* =========================
+   Depoimentos
+========================= */
+#depoimentos {
+  padding: 4rem 1rem;
+  background: #FFF7ED;
+  text-align: center;
+}
+
+#depoimentos h2 {
+  font-size: 2rem;
+  color: #FF7F50;
+  margin-bottom: 2rem;
+}
+
+#depoimentos div {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   FAQ
+========================= */
+#faq {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#faq h2 {
+  font-size: 2rem;
+  color: #FF7F50;
+  margin-bottom: 2rem;
+}
+
+details {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details summary::after { content: "▼"; float: right; }
+details[open] summary::after { content: "▲"; }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer */
+.footer {
+    background-color: #ea580c; /* Cor laranja equivalente ao orange-600 */
+    color: white;
+    padding: 2.5rem 0;
+}
+
+.footer-container {
+    max-width: 72rem; /* equivalente a max-w-6xl */
+    margin: 0 auto;
+    padding: 0 1.5rem; /* equivalente a px-6 */
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; /* equivalente a gap-8 */
+}
+
+@media (min-width: 768px) {
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* equivalente a space-y-3 */
+}
+
+.footer-title {
+    font-size: 1.125rem; /* equivalente a text-lg */
+    font-weight: 700;
+    margin-bottom: 1rem; /* equivalente a mb-4 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.5rem; /* equivalente a pb-2 */
+    color: white;
+}
+
+/* Estilos para contato */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem; /* equivalente a mr-3 */
+}
+
+.contact-icon {
+    margin-top: 0.125rem; /* pequeno ajuste para alinhamento */
+    color: white;
+}
+
+.contact-text {
+    color: white;
+}
+
+.contact-info {
+    color: white !important;
+    margin: 0;
+}
+
+.contact-label {
+    font-weight: 500;
+    color: white;
+}
+
+/* Estilos para links */
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* equivalente a space-y-2 */
+}
+
+.footer-link {
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Links sociais */
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+}
+
+.social-icon {
+    display: inline-block;
+    color: white;
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 2.5rem; /* equivalente a mt-10 */
+    padding-top: 1.5rem; /* equivalente a pt-6 */
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.875rem; /* equivalente a text-sm */
+    color: white;
+}
+
+/* Garantindo que todos os textos dentro do footer sejam brancos */
+.footer * {
+    color: white;
+}
+
+.footer p,
+.footer span,
+.footer li,
+.footer a {
+    color: white !important;
+}
