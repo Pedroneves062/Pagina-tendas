@@ -3,17 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tendas Piramidais — Qualidade e Resistência</title>
+  <title>Master tendas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="tenda-icon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900">
 
-<!-- Hero Section --> <section id="hero"> <div class="hero-content"> 
-    <h1>MASTER TENDAS</h1> <p>Todos os tipos de tendas para eventos, festas e serviços</p> 
-    <a href="https://wa.me/5562993314245" target="_blank" class="btn-hero"> <i class="fa-brands fa-whatsapp"></i> Solicite um Orçamento </a> </div> </section>
+<body class="bg-gradient-to-b from-orange-50 to-white text-gray-900">
+->
+<!-- Header fixo para mobile -->
+<header class="fixed top-0 left-0 w-full z-50 bg-red-700 shadow-md flex flex-col items-center">
+  <!-- Logo -->
+  <div class="flex items-center space-x-1 py-2">
+    <span class="text-3xl font-extrabold text-white font-serif italic flex items-center">
+      MASTER
+      <!-- Ícone: triângulos sobrepostos -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+           class="h-5 w-5 ml-2 text-yellow-300"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+        <polygon points="12 2 22 20 2 20 12 2" />
+        <polygon points="12 6 18 18 6 18 12 6" />
+      </svg>
+    </span>
+  </div>
+
+  <!-- Subtítulo -->
+  <span class="text-xs text-white tracking-widest font-semibold mb-1">
+    TENDAS
+  </span>
+
+  <!-- Chamada apelativa -->
+  <span class="text-xs text-yellow-300 font-extrabold tracking-wide py-1">
+    🚨 Cobrimos qualquer oferta do mercado — chame agora! 🚨
+  </span>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="relative w-full h-[85vh] flex flex-col items-center justify-center text-center text-red-700 overflow-hidden">
+  <!-- Imagem de fundo -->
+  <div 
+    class="absolute inset-0 bg-cover bg-center" 
+    style="background-image: url('https://tendapiramidal.com.br/media/imagens/tenda-piramidal-12x12-branca.jpg');">
+  </div>
+
+  <!-- Overlay com cor semitransparente -->
+  <div class="absolute inset-0 bg-gradient-to-b from-red-900/70 via-red-800/60 to-black/50"></div>
+
+  <!-- Conteúdo do Hero -->
+  <div class="relative z-10 px-4 sm:px-6">
+    <h1 class="text-4xl sm:text-5xl font-extrabold mb-3 leading-tight drop-shadow-lg">
+      Tendas de Alta Performance
+    </h1>
+    <p class="text-base sm:text-lg font-medium text-white tracking-wide drop-shadow-md max-w-xs mx-auto">
+      Soluções completas para seu evento com estilo e proteção!
+    </p>
+    <a href="#contato" 
+       class="mt-6 inline-block bg-red-700 text-white px-6 py-2.5 rounded-full text-base font-semibold hover:bg-red-800 active:scale-95 transition-all duration-300">
+      Solicite um Orçamento
+    </a>
+  </div>
+</section>
+
+
 
 
 </body>
@@ -124,11 +181,11 @@
   </div>
 </section>
 <!-- Quem Somos -->
-<section id="quemsomos" class="py-16 px-6 bg-gradient-to-b from-orange-50 to-orange-100" >
+<section id="quemsomos" class="py-16 px-6 bg-gradient-to-b from-red-50 to-red-100" >
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-orange-600 mb-4">Quem Somos</h2>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-red-700 mb-4">Quem Somos</h2>
     <p class="text-gray-700 text-lg md:text-xl mb-6 leading-relaxed">
-      Somos uma empresa de <span class="font-semibold text-orange-500">Goiânia</span> com mais de <span class="font-semibold text-orange-500">10 anos de mercado</span>.  
+      Somos uma empresa de <span class="font-semibold text-red-700">Goiânia</span> com mais de <span class="font-semibold text-red-700">10 anos de mercado</span>.  
       Especializados em <span class="font-semibold text-green-600">tendas piramidais</span>, entregamos produtos de alta qualidade, resistentes e fáceis de montar.
     </p>
     <a href="https://wa.me/5562993314245" target="_blank"
@@ -142,51 +199,43 @@
 <!-- Por que comprar conosco? -->
 <section id="porquecomprar" class="py-16 px-6 bg-gradient-to-b from-white to-orange-50">
   <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-orange-600 mb-12">Por que comprar conosco?</h2>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-red-700 mb-12">Por que comprar conosco?</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Diferenciais -->
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">🏆</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Mais de 10 anos de experiência</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Mais de 10 anos de experiência</h3>
         <p class="text-gray-700">Atuando em Goiânia, garantindo qualidade, segurança e atendimento confiável.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">💪</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Produtos resistentes</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Produtos resistentes</h3>
         <p class="text-gray-700">Tendas piramidais feitas com materiais de alta durabilidade, ideais para qualquer evento.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">⚡</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Montagem rápida</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Montagem rápida</h3>
         <p class="text-gray-700">Facilidade de montagem e desmontagem, sem complicações para você e sua equipe.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">💬</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Atendimento personalizado</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Atendimento personalizado</h3>
         <p class="text-gray-700">Suporte rápido e dedicado, ajudando a escolher a tenda perfeita para seu evento.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">🚚</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Entrega rápida</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Entrega rápida</h3>
         <p class="text-gray-700">Logística eficiente para que sua tenda chegue no prazo, sem stress.</p>
       </div>
       <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform">
         <div class="text-5xl mb-4">💚</div>
-        <h3 class="font-bold text-xl text-orange-600 mb-2">Clientes satisfeitos</h3>
+        <h3 class="font-bold text-xl text-red-700 mb-2">Clientes satisfeitos</h3>
         <p class="text-gray-700">Mais de 10 anos de mercado e inúmeros eventos bem-sucedidos garantem nossa credibilidade.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Estatísticas -->
-<section class="py-16 px-6 bg-orange-50">
-  <div class="max-w-5xl mx-auto text-center grid grid-cols-2 sm:grid-cols-3 gap-8">
-    <div><h3 class="text-4xl font-bold text-green-600">10+</h3><p class="text-gray-700 mt-2">Anos de experiência</p></div>
-    <div><h3 class="text-4xl font-bold text-green-600">500+</h3><p class="text-gray-700 mt-2">Eventos atendidos</p></div>
-    <div><h3 class="text-4xl font-bold text-green-600">100%</h3><p class="text-gray-700 mt-2">Clientes satisfeitos</p></div>
-  </div>
-</section>
 <div class="text-center mt-8">
   <a href="https://wa.me/5562993314245" target="_blank"
      class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg text-lg transition-transform transform hover:scale-110">
